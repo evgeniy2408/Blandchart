@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="/img/Blanchard.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/css/choices.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Blanchard</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="heder-menu">
+            <div class="container header__container">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <a href="" class="header__logo">
+                    <img src="/img/hero_logo.svg" alt="доготип">
+                </a>
+                <div class="menu-header" >
+                    <nav class="header-nav" data-simplebar>
+                        <ul class="header__list">
+                            <li class="header-list-item">
+                                <a data-goto=".about" href="#" class="header__link el-effects header__link-focus"
+                                    aria-label="О нас">О нас</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a data-goto=".gallery" href="#" class="header__link el-effects header__link-focus"
+                                    aria-label="Галерея">Галерея</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a data-goto=".catalog" href="#" class="header__link el-effects header__link-focus"
+                                    aria-label="Каталог">Каталог</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a data-goto=".event" href="#" class="header__link el-effects header__link-focus"
+                                    aria-label="События">События</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a data-goto=".projects" href="#" class="header__link el-effects header__link-focus"
+                                    aria-label="Проекты">Проекты</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a data-goto=".contacts" href="#" class="header__link el-effects header__link-focus"
+                                    aria-label="Контакты">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__account el-effects header__account-focus">
+                        <svg class="header__account-img " width="13" height="13" viewBox="0 0 13 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" />
+                        </svg>
+                        Войти
+                    </button>
+                </div>
+                <div tabindex="0" class="header__search">
+                    <svg aria-label="Поиск по сайту" class="header-search-icon" width="23" height="22"
+                        viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="6.8678" height="1.71695"
+                            transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                            fill="white" />
+                    </svg>
+                </div>
+                <form action="#" aria-label="Поиск по сайту" class="header-search-form ">
+                    <button tabindex="0" aria-label="Поиск" class="btn-search" type="submit">
+                        <svg class="header-search-form-icon" width="23" height="22" viewBox="0 0 23 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="6.8678" height="1.71695"
+                                transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                    <input tabindex="0" aria-label="Ведите текст" type="text" class="header-search-form-input">
+                    <svg class="header-search-form-close" width="29" height="29" viewBox="0 0 29 29"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <rect width="37.2801" height="3.72801"
+                                transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 0)" fill="white" />
+                            <rect width="37.2801" height="3.72801"
+                                transform="matrix(0.707093 -0.707121 0.707093 0.707121 -0.000976562 26.3615)"
+                                fill="white" />
+                        </g>
+                    </svg>
+                </form>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero-slider swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide hero-slider__slide">
+                        <picture>
+                            <source srcset="/img/wraper_slider/wraper_slide-1_320.jpg" media="(max-width: 320px)">
+                            <source srcset="/img/wraper_slider/wraper_slide-1_768.jpg" media="(max-width: 768px)">
+                            <source srcset="/img/wraper_slider/wraper_slide-1_1024.jpg" media="(max-width: 1024px)">
+                            <source srcset="/img/wraper_slider/wraper_slide-1.jpg">
+                            <img class="hero-slider-img" src="/img/wraper_slider/wraper_slide-1.jpg" alt="Фон слайдера">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide hero-slider__slide">
+                        <picture>
+                            <source srcset="/img/wraper_slider/wraper_slide-2_320.jpg" media="(max-width: 320px)">
+                            <source srcset="/img/wraper_slider/wraper_slide-2_768.jpg" media="(max-width: 768px)">
+                            <source srcset="/img/wraper_slider/wraper_slide-2_1024.jpg" media="(max-width: 1024px)">
+                            <source srcset="/img/wraper_slider/wraper_slide-2.jpg">
+                            <img class="hero-slider-img" src="/img/wraper_slider/wraper_slide-2.jpg" alt="Фон слайдера">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide hero-slider__slide">
+                        <picture>
+                            <source srcset="/img/wraper_slider/wraper_slide-3_320.jpg" media="(max-width: 320px)">
+                            <source srcset="/img/wraper_slider/wraper_slide-3_768.jpg" media="(max-width: 768px)">
+                            <source srcset="/img/wraper_slider/wraper_slide-3_1024.jpg" media="(max-width: 1024px)">
+                            <source srcset="/img/wraper_slider/wraper_slide-3.jpg">
+                            <img class="hero-slider-img" src="/img/wraper_slider/wraper_slide-3.jpg" alt="Фон слайдера">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__menu">
+                <div class="container hero__menu-container">
+                    <ul class="hero-menu-list">
+                        <li class="hero-menu-list-item ">
+                            <button class="hero-menu-btn el-effects hero-list-focus">
+
+                                Реализм
+                                <svg class="hero-menu-arrow arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
+                                </svg>
+
+                            </button>
+                            <div class="sub-menu-wraper">
+                                <ul class="sub-menu-list" data-simplebar>
+                                    <li class="sub-menu-item realism-1"><a href="" class="sub-menu-link">Тинторетто</a>
+                                    </li>
+                                    <li class="sub-menu-item realism-2"><a href="" class="sub-menu-link">Фридрих</a>
+                                    </li>
+                                    <li class="sub-menu-item realism-3"><a href="" class="sub-menu-link">Леонардо</a>
+                                    </li>
+                                    <li class="sub-menu-item realism-4"><a href="" class="sub-menu-link">Верроккьо</a>
+                                    </li>
+                                    <li class="sub-menu-item realism-1"><a href="" class="sub-menu-link">Тинторетто</a>
+                                    </li>
+                                    <li class="sub-menu-item realism-2"><a href="" class="sub-menu-link">Фридрих</a>
+                                    </li>
+                                    <li class="sub-menu-item realism-3"><a href="" class="sub-menu-link">Леонардо</a>
+                                    </li>
+                                    <li class="sub-menu-item realism-4"><a href="" class="sub-menu-link">Верроккьо</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hero-menu-list-item ">
+                            <button class="hero-menu-btn el-effects hero-list-focus">
+                                Импрессионизм
+                                <svg class="hero-menu-arrow arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
+                                </svg>
+
+                            </button>
+
+
+                            <div class="sub-menu-wraper">
+                                <ul class="sub-menu-list" data-simplebar>
+                                    <li class="sub-menu-item impresionism-1"><a href="" class="sub-menu-link">Моне</a>
+                                    </li>
+                                    <li class="sub-menu-item impresionism-2"><a href="" class="sub-menu-link">Сислей</a>
+                                    </li>
+                                    <li class="sub-menu-item impresionism-3"><a href="" class="sub-menu-link">Мане</a>
+                                    </li>
+                                    <li class="sub-menu-item impresionism-4"><a href="" class="sub-menu-link">Ренуар</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hero-menu-list-item ">
+                            <button class="hero-menu-btn el-effects hero-list-focus">Постимпрессионизм
+                                <svg class="hero-menu-arrow arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
+                                </svg>
+
+                            </button>
+
+                            <div class="sub-menu-wraper">
+                                <ul class="sub-menu-list" data-simplebar>
+                                    <li class="sub-menu-item postimpressionism-1"><a href="" class="sub-menu-link">Ван
+                                            Гог</a></li>
+                                    <li class="sub-menu-item postimpressionism-2"><a href=""
+                                            class="sub-menu-link">Сезанн</a></li>
+                                    <li class="sub-menu-item postimpressionism-3"><a href=""
+                                            class="sub-menu-link">Гоген</a></li>
+                                    <li class="sub-menu-item postimpressionism-4"><a href=""
+                                            class="sub-menu-link">Сёра</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hero-menu-list-item ">
+                            <button class="hero-menu-btn el-effects hero-list-focus">Авангард
+                                <svg class="hero-menu-arrow arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
+                                </svg>
+
+                            </button>
+
+                            <div class="sub-menu-wraper">
+                                <ul class="sub-menu-list" data-simplebar>
+                                    <li class="sub-menu-item avangard-1"><a href="" class="sub-menu-link">Кандинский</a>
+                                    </li>
+                                    <li class="sub-menu-item avangard-2"><a href="" class="sub-menu-link">Маринетти</a>
+                                    </li>
+                                    <li class="sub-menu-item avangard-3"><a href="" class="sub-menu-link">Малевич</a>
+                                    </li>
+                                    <li class="sub-menu-item avangard-4"><a href="" class="sub-menu-link">Пикассо</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hero-menu-list-item ">
+                            <button class="hero-menu-btn el-effects hero-list-focus">Футуризм
+                                <svg class="hero-menu-arrow arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
+                                </svg>
+
+                            </button>
+
+                            <div class="sub-menu-wraper">
+                                <ul class="sub-menu-list" data-simplebar>
+                                    <li class="sub-menu-item futurism-1"><a href="" class="sub-menu-link">Карра</a>
+                                    </li>
+                                    <li class="sub-menu-item futurism-2"><a href="" class="sub-menu-link">Прателла</a>
+                                    </li>
+                                    <li class="sub-menu-item futurism-3"><a href="" class="sub-menu-link">Северини</a>
+                                    </li>
+                                    <li class="sub-menu-item futurism-4"><a href="" class="sub-menu-link">Балла</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="search-form " action="#">
+                        <button class="btn-search">
+                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="6.8678" height="1.71695"
+                                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <input aria-label="Поиск по сайту" type="text" placeholder="Поиск по сайту" class="search-input"
+                            id="search">
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="hero__card">
+                    <h1 tabindex="0" class="hero__title">Прикоснитесь к прекрасному</h1>
+                    <div tabindex="0" class="hero__dscr">Мы вынуждены отталкиваться от того, что
+                        реализация намеченных плановых
+                        заданий создаёт предпосылки для новых предложений.</div>
+                    <button aria-label="Подписаться на рассылку" data-goto=".contacts"
+                        class="btn hero__btn el-effects hero__btn-focus">Подписаться на рассылку</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <div class="container">
+                <h2 tabindex="0" class="section-title about-title">О нас</h2>
+                <div tabindex="0" class="about__descr">Ясность нашей позиции очевидна: семантический разбор
+                    внешних противодействий
+                    однозначно определяет каждого участника как способного принимать собственные решения касаемо
+                    распределения
+                    внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип
+                    будущего проекта
+                    влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает,
+                    что высокое качество
+                    позиционных исследований создаёт необходимость включения в производственный план целого ряда
+                    внеочередных мероприятий с учётом
+                    комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных
+                    стандартов, действия представителей оппозиции
+                    набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container">
+
+                <div class="gallery-container">
+                    <div class="gallery__card">
+                        <h2 tabindex="0" class="gallery__title">Галерея</h2>
+                        <div tabindex="0" class="gallery__filter">Фильтр:</div>
+                        <div tabindex="0" class="gallery__select" id="Painting">
+                            <select aria-label="Выбор жанра" class="custom-select " name="select" id="SelectPainting">
+                                <option value="Живопись">Живопись</option>
+                                <option value="Рисунок">Рисунок</option>
+                                <option value="Скульптура">Скульптура</option>
+                            </select>
+                        </div>
+                        <ul class="checkbox-list">
+                            <li class="checkbox-item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="xix_century" id="xix_century" class="real-checkbox">
+                                    <span class="custom-checkbox"> XIX век</span>
+                                    <span class="input-close"></span>
+                                </label>
+                            </li>
+                            <li class="checkbox-item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="xx_century" id="xx_century" class="real-checkbox">
+                                    <span class="custom-checkbox">XX век</span>
+                                </label>
+                            </li>
+                            <li class="checkbox-item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="now-time" id="now-time" class="real-checkbox">
+                                    <span class="custom-checkbox">Современность</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gallery-swiper-wrpper">
+                        <div class="swiper-gallery-managment">
+                            <button
+                                class="swiper-gallery-button swiper-gallery-button-prev swiper-button swiper-button-focus">
+                                <svg aria-label="Предудущий слайд" class="arrow-img" width="7" height="12"
+                                    viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 11L0.999995 6L6 0.999998" stroke="white" />
+                                </svg>
+                            </button>
+                            <div class="swiper-gallery-pagination"></div>
+                            <button
+                                class=" swiper-gallery-button swiper-gallery-button-next swiper-button swiper-button-focus">
+                                <svg aria-label="Следующий слайд" class="arrow-img" width="7" height="12"
+                                    viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 11L6.00001 6L1 0.999997" stroke="white" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        <!-- Slider main container -->
+                        <div class="swiper gallery__slider">
+                            <!-- Additional required wrapper -->
+                            <div class="gallery-slider-wrapper swiper-wrapper ">
+                                <!-- Slides -->
+                                <button class="gallery-slider-slide swiper-slide" data-path="gallery-3">
+                                    <picture class="gallery-slider-image">
+                                        <source srcset="/img/gallery_swiper/gallery_1_320.jpg"
+                                            media="(max-width: 425px)">
+                                        <source srcset="/img/gallery_swiper/gallery_1_768.jpg"
+                                            media="(max-width: 768px)">
+                                        <source srcset="/img/gallery_swiper/gallery_1.jpg">
+                                        <img src="/img/gallery_swiper/gallery_1.jpg" alt="Фон слайдера галлереи">
+                                    </picture>
+                                </button>
+                                <button class="gallery-slider-slide swiper-slide" data-path="gallery-1">
+                                    <picture class="gallery-slider-image">
+                                        <source srcset="/img/gallery_swiper/gallery_2_320.jpg"
+                                            media="(max-width: 425px)">
+                                        <source srcset="/img/gallery_swiper/gallery_2_768.jpg"
+                                            media="(max-width: 768px)">
+                                        <source srcset="/img/gallery_swiper/gallery_2.jpg">
+                                        <img src="/img/gallery_swiper/gallery_2.jpg" alt="Фон слайдера галлереи">
+                                    </picture>
+                                </button>
+
+                                <button class="gallery-slider-slide swiper-slide" data-path="gallery-5">
+                                    <picture class="gallery-slider-image">
+                                        <source srcset="/img/gallery_swiper/gallery_5_320.jpg"
+                                            media="(max-width: 425px)">
+                                        <source srcset="/img/gallery_swiper/gallery_5_768.jpg"
+                                            media="(max-width: 768px)">
+                                        <source srcset="/img/gallery_swiper/gallery_5.jpg">
+                                        <img src="/img/gallery_swiper/gallery_5.jpg" alt="Фон слайдера галлереи">
+                                    </picture>
+                                </button>
+                                <button class="gallery-slider-slide swiper-slide" data-path="gallery-2">
+                                    <picture class="gallery-slider-image">
+                                        <source srcset="/img/gallery_swiper/gallery_3_320.jpg"
+                                            media="(max-width: 425px)">
+                                        <source srcset="/img/gallery_swiper/gallery_3_768.jpg"
+                                            media="(max-width: 768px)">
+                                        <source srcset="/img/gallery_swiper/gallery_3.jpg">
+                                        <img src="/img/gallery_swiper/gallery_3.jpg" alt="Фон слайдера галлереи">
+                                    </picture>
+                                </button>
+
+                                <button class="gallery-slider-slide swiper-slide" data-path="gallery-4">
+                                    <picture class="gallery-slider-image">
+                                        <source srcset="/img/gallery_swiper/gallery_4_320.jpg"
+                                            media="(max-width: 425px)">
+                                        <source srcset="/img/gallery_swiper/gallery_4_768.jpg"
+                                            media="(max-width: 768px)">
+                                        <source srcset="/img/gallery_swiper/gallery_4.jpg">
+                                        <img src="/img/gallery_swiper/gallery_4.jpg" alt="Фон слайдера галлереи">
+                                    </picture>
+                                </button>
+
+                                <button class="gallery-slider-slide swiper-slide" data-path="gallery-6">
+                                    <picture class="gallery-slider-image">
+                                        <source srcset="/img/gallery_swiper/gallery_6_320.jpg"
+                                            media="(max-width: 425px)">
+                                        <source srcset="/img/gallery_swiper/gallery_6_768.jpg"
+                                            media="(max-width: 768px)">
+                                        <source srcset="/img/gallery_swiper/gallery_6.jpg">
+                                        <img src="/img/gallery_swiper/gallery_6.jpg" alt="Фон слайдера галлереи">
+                                    </picture>
+                                </button>
+
+                                ...
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="modal-list">
+                        <li class="modals-list-item">
+                            <div class="modals" data-target="gallery-1">
+                                <div class="modal-shadow" data-simplebar>
+                                    <div class="modal-overrlay">
+                                        <div class="modal">
+                                            <picture>
+                                                <source srcset="/img/modal_1_320.jpg" media="(max-width: 425px)">
+                                                <source srcset="/img/modal_1_768.jpg" media="(max-width: 768px)">
+                                                <source srcset="/img/modal_1.jpg" media="(max-width: 1024px)">
+                                                <source srcset="/img/modal_1_1920.jpg">
+                                                <img class="modal-img" src="/img/modal_1_1920.jpg" alt="Обложка модала">
+                                            </picture>
+                                            <div class="modal-wrapper">
+                                                <div class="modal-content">
+                                                    <span class="modal-close"></span>
+                                                    <h3 tabindex="0" class="modal-autor">Казимир Малевич</h3>
+                                                    <div tabindex="0" class="modal-name">“Женщина с граблями”
+                                                    </div>
+                                                    <div tabindex="0" class="modal-years">1931-1932</div>
+                                                    <div tabindex="0" class="modal-descr">
+                                                        Картина из&nbsp;второй серии крестьянского цикла работ Казимира
+                                                        Малевича.
+                                                        Художник принялся за&nbsp;её создание в 1930&ndash;
+                                                        1931 годах, после того, как первый цикл был утерян после
+                                                        Берлинской
+                                                        и&nbsp;
+                                                        Варшавской выставок в&nbsp;1927 году.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="modals-list-item">
+                            <div class="modals" data-target="gallery-2">
+                                <div class="modal-shadow" data-simplebar>  
+                                    <div class="modal-overrlay">
+                                    <div class="modal">
+                                        <picture>
+                                            <source srcset="/img/modal_1_320.jpg" media="(max-width: 425px)">
+                                            <source srcset="/img/modal_1_768.jpg" media="(max-width: 768px)">
+                                            <source srcset="/img/modal_1.jpg" media="(max-width: 1024px)">
+                                            <source srcset="/img/modal_1_1920.jpg">
+                                            <img class="modal-img" src="/img/modal_1_1920.jpg" alt="Обложка модала">
+                                        </picture>
+                                        <div class="modal-wrapper">
+                                            <div class="modal-content">
+                                                <span class="modal-close"></span>
+                                                <h3 tabindex="0" class="modal-autor">Казимир Малевич</h3>
+                                                <div tabindex="0" class="modal-name">“Женщина с граблями”
+                                                </div>
+                                                <div tabindex="0" class="modal-years">1931-1932</div>
+                                                <div tabindex="0" class="modal-descr">
+                                                    Картина из&nbsp;второй серии крестьянского цикла работ Казимира
+                                                    Малевича.
+                                                    Художник принялся за&nbsp;её создание в 1930&ndash;
+                                                    1931 годах, после того, как первый цикл был утерян после
+                                                    Берлинской
+                                                    и&nbsp;
+                                                    Варшавской выставок в&nbsp;1927 году.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></div>
+
+                            </div>
+                        </li>
+                        <li class="modals-list-item">
+                            <div class="modals" data-target="gallery-3">
+                                <div class="modal-shadow" data-simplebar>
+                                    <div class="modal-overrlay">
+                                        <div class="modal">
+                                            <picture>
+                                                <source srcset="/img/modal_1_320.jpg" media="(max-width: 425px)">
+                                                <source srcset="/img/modal_1_768.jpg" media="(max-width: 768px)">
+                                                <source srcset="/img/modal_1.jpg" media="(max-width: 1024px)">
+                                                <source srcset="/img/modal_1_1920.jpg">
+                                                <img class="modal-img" src="/img/modal_1_1920.jpg" alt="Обложка модала">
+                                            </picture>
+                                            <div class="modal-wrapper">
+                                                <div class="modal-content">
+                                                    <span class="modal-close"></span>
+                                                    <h3 tabindex="0" class="modal-autor">Казимир Малевич</h3>
+                                                    <div tabindex="0" class="modal-name">“Женщина с граблями”
+                                                    </div>
+                                                    <div tabindex="0" class="modal-years">1931-1932</div>
+                                                    <div tabindex="0" class="modal-descr">
+                                                        Картина из&nbsp;второй серии крестьянского цикла работ Казимира
+                                                        Малевича.
+                                                        Художник принялся за&nbsp;её создание в 1930&ndash;
+                                                        1931 годах, после того, как первый цикл был утерян после
+                                                        Берлинской
+                                                        и&nbsp;
+                                                        Варшавской выставок в&nbsp;1927 году.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="modals-list-item">
+                            <div class="modals" data-target="gallery-4">
+                                <div class="modal-shadow" data-simplebar>
+                                    <div class="modal-overrlay">
+                                        <div class="modal">
+                                            <picture>
+                                                <source srcset="/img/modal_1_320.jpg" media="(max-width: 425px)">
+                                                <source srcset="/img/modal_1_768.jpg" media="(max-width: 768px)">
+                                                <source srcset="/img/modal_1.jpg" media="(max-width: 1024px)">
+                                                <source srcset="/img/modal_1_1920.jpg">
+                                                <img class="modal-img" src="/img/modal_1_1920.jpg" alt="Обложка модала">
+                                            </picture>
+                                            <div class="modal-wrapper">
+                                                <div class="modal-content">
+                                                    <span class="modal-close"></span>
+                                                    <h3 tabindex="0" class="modal-autor">Казимир Малевич</h3>
+                                                    <div tabindex="0" class="modal-name">“Женщина с граблями”
+                                                    </div>
+                                                    <div tabindex="0" class="modal-years">1931-1932</div>
+                                                    <div tabindex="0" class="modal-descr">
+                                                        Картина из&nbsp;второй серии крестьянского цикла работ Казимира
+                                                        Малевича.
+                                                        Художник принялся за&nbsp;её создание в 1930&ndash;
+                                                        1931 годах, после того, как первый цикл был утерян после
+                                                        Берлинской
+                                                        и&nbsp;
+                                                        Варшавской выставок в&nbsp;1927 году.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="modals-list-item">
+                            <div class="modals" data-target="gallery-5">
+                                <div class="modal-shadow" data-simplebar>
+                                    <div class="modal-overrlay">
+                                        <div class="modal">
+                                            <picture>
+                                                <source srcset="/img/modal_1_320.jpg" media="(max-width: 425px)">
+                                                <source srcset="/img/modal_1_768.jpg" media="(max-width: 768px)">
+                                                <source srcset="/img/modal_1.jpg" media="(max-width: 1024px)">
+                                                <source srcset="/img/modal_1_1920.jpg">
+                                                <img class="modal-img" src="/img/modal_1_1920.jpg" alt="Обложка модала">
+                                            </picture>
+                                            <div class="modal-wrapper">
+                                                <div class="modal-content">
+                                                    <span class="modal-close"></span>
+                                                    <h3 tabindex="0" class="modal-autor">Казимир Малевич</h3>
+                                                    <div tabindex="0" class="modal-name">“Женщина с граблями”
+                                                    </div>
+                                                    <div tabindex="0" class="modal-years">1931-1932</div>
+                                                    <div tabindex="0" class="modal-descr">
+                                                        Картина из&nbsp;второй серии крестьянского цикла работ Казимира
+                                                        Малевича.
+                                                        Художник принялся за&nbsp;её создание в 1930&ndash;
+                                                        1931 годах, после того, как первый цикл был утерян после
+                                                        Берлинской
+                                                        и&nbsp;
+                                                        Варшавской выставок в&nbsp;1927 году.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="modals-list-item">
+                            <div class="modals" data-target="gallery-6">
+                                <div class="modal-shadow" data-simplebar>
+                                    <div class="modal-overrlay">
+                                        <div class="modal">
+                                            <picture>
+                                                <source srcset="/img/modal_1_320.jpg" media="(max-width: 425px)">
+                                                <source srcset="/img/modal_1_768.jpg" media="(max-width: 768px)">
+                                                <source srcset="/img/modal_1.jpg" media="(max-width: 1024px)">
+                                                <source srcset="/img/modal_1_1920.jpg">
+                                                <img class="modal-img" src="/img/modal_1_1920.jpg" alt="Обложка модала">
+                                            </picture>
+                                            <div class="modal-wrapper">
+                                                <div class="modal-content">
+                                                    <span class="modal-close"></span>
+                                                    <h3 tabindex="0" class="modal-autor">Казимир Малевич</h3>
+                                                    <div tabindex="0" class="modal-name">“Женщина с граблями”
+                                                    </div>
+                                                    <div tabindex="0" class="modal-years">1931-1932</div>
+                                                    <div tabindex="0" class="modal-descr">
+                                                        Картина из&nbsp;второй серии крестьянского цикла работ Казимира
+                                                        Малевича.
+                                                        Художник принялся за&nbsp;её создание в 1930&ndash;
+                                                        1931 годах, после того, как первый цикл был утерян после
+                                                        Берлинской
+                                                        и&nbsp;
+                                                        Варшавской выставок в&nbsp;1927 году.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="container catalog-container">
+                <h2 tabindex="0" class="section-title catalog__title">Каталог</h2>
+                <div tabindex="0" class="catalog__descr">
+                    Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского
+                    типа политической культуры,
+                    будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей
+                    картины, стремящиеся вытеснить традиционное производство,
+                    нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены
+                    на независимые элементы.
+                </div>
+                <div class="catlog-tabs tab-content tab-content-active" data-target="italy">
+                    <div class="artist-card">
+                        <div class="artist-card-item  tab-artist tab-artist-active" data-target="d_girlandaio">
+                            <picture class="artist-img">
+                                <img class="artist-card-img" src="/img/d_girlandaio.png" alt="">
+                            </picture>
+                            <h3 tabindex="0" class="artist-title">
+                                Доменико Гирландайо
+                            </h3>
+                            <div tabindex="0" class="artist-descr">
+                                <div tabindex="0" class="artist-life">
+                                    2 июня 1448 — 11 января 1494.
+                                </div>
+                                Один из ведущих флорентийских художников Кватроченто, основатель художественной
+                                династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                                мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками.
+                                Автор фресковых циклов, в которых выпукло,
+                                со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их
+                                роли
+                                выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                        <div class="artist-card-empty tab-artist" data-target="empty">
+                            <picture class="artist-img">
+                                <source srcset="/img/empty_artist_320.jpg" media="(max-width: 425px)">
+                                <source srcset="/img/empty_artist_768.jpg" media="(max-width: 768px)">
+                                <source srcset="/img/empty_artist_1024.jpg" media="(max-width: 1024px)">
+                                <source srcset="/img/empty_artist_1920.jpg">
+                                <img class="artist-card-empty-img" src="/img/empty_artist_1920.jpg"
+                                    alt="картинка артиста">
+                            </picture>
+                            <h3 tabindex="0" class="artist-title artist-title-empty">
+                                Что мы о нём знаем?
+                            </h3>
+                            <div tabindex="0" class="artist-descr artist-descr-empty">
+                                Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                            </div>
+                            <a data-goto=".gallery" aria-label="В галлерею" class="artist-link artist-card-link"
+                                href="#">В
+                                галерею</a>
+                        </div>
+                    </div>
+                    <div id="accordion-italy" class="catalog__acardion order-0">
+                        <div class="catalog__year  accordeon-border" role="tablist">
+                            <div role="tab" aria-label="C 1400 по 1499 гг." class="catalog-year-title"> C 1400 по
+                                1499 гг.</div>
+                            <svg class="catalog-year-img" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                    fill="#ECECEC" />
+                                <path
+                                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                    stroke="#ECECEC" />
+                                <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                            </svg>
+                        </div>
+                        <div class="catalog__artist">
+                            <ul class="catalog-artist-name">
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty" data-path="empty">
+                                        Бенедетто ди
+                                        Биндо </button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty" data-path="empty">
+                                        Бергоньоне,
+                                        Амброджо</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty" data-path="empty">
+                                        Биссоло,
+                                        Франческо</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Больтраффио,
+                                        Джованни</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Бонсиньори,
+                                        Франческо</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Боттичини,
+                                        Рафаэлло</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Брамантино</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Бреа, Людовико</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Бьяджо д’Антонио
+                                        Туччи</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Веккьетта</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Андреа Верроккьо</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist" data-goto=".artist-card-item"
+                                    data-path="d_girlandaio">
+                                    <button class="artist-name-focus artist-name-active" data-goto=".artist-card-item"
+                                        data-path="d_girlandaio"> Доменико
+                                        Гирландайо</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Беноццо Гоццоли</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Граначчи,
+                                        Франческо</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Грегорио ди Чекко</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Джованни да Удине</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Джованни ди Паоло</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Джорджоне</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Парентино,
+                                        Бернардо</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Пезеллино</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Пьетро Перуджино</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Перуцци,
+                                        Бальдассаре</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Пизанелло</button>
+                                </li>
+                                <li class="artist-name-item tabs-btn-artist">
+                                    <button class="artist-name-focus" data-goto=".artist-card-empty"
+                                        data-path="empty">Пинтуриккьо</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="catalog__year" role="tablist">
+                            <div role="tab" aria-label="C 1500 по 1599 гг." class="catalog-year-title"> C 1500 по
+                                1599 гг.</div>
+                            <svg class="catalog-year-img" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                    fill="#ECECEC" />
+                                <path
+                                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                    stroke="#ECECEC" />
+                                <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                            </svg>
+                        </div>
+                        <div class="catalog__artist">
+                            <div class="catalog-empty">
+                                <div class="empty-wrapper">
+                                    <div class="empty-img"></div>
+                                </div>
+                                <div class="empty-card">
+                                    <div class="empty-title" tabindex="0">Здесь пока пусто</div>
+                                    <div class="empty-descr" tabindex="0">
+                                        А в галерее вы всегда можете найти что-то интересное для себя
+                                    </div>
+                                    <a data-goto=".gallery" aria-label="В галлерею" class="empty-link" href="#">В
+                                        галерею</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__year" role="tablist">
+                            <div role="tab" aria-label="C 1600 по 1699 гг." class="catalog-year-title"> C 1600 по
+                                1699 гг.</div>
+                            <svg class="catalog-year-img" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                    fill="#ECECEC" />
+                                <path
+                                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                    stroke="#ECECEC" />
+                                <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                            </svg>
+                        </div>
+                        <div class="catalog__artist">
+                            <div class="catalog-empty">
+                                <div class="empty-wrapper">
+                                    <div class="empty-img"></div>
+                                </div>
+                                <div class="empty-card">
+                                    <div class="empty-title" tabindex="0">Здесь пока пусто</div>
+                                    <div class="empty-descr" tabindex="0">
+                                        А в галерее вы всегда можете найти что-то интересное для себя
+                                    </div>
+                                    <a data-goto=".gallery" aria-label="В галлерею" class="empty-link" href="#">В
+                                        галерею</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__year" role="tablist">
+                            <div role="tab" aria-label="C 1700 по 1799 гг." class="catalog-year-title"> C 1700 по
+                                1799 гг.</div>
+                            <svg class="catalog-year-img" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                    fill="#ECECEC" />
+                                <path
+                                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                    stroke="#ECECEC" />
+                                <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                            </svg>
+                        </div>
+                        <div class="catalog__artist">
+                            <div class="catalog-empty">
+                                <div class="empty-wrapper">
+                                    <div class="empty-img"></div>
+                                </div>
+                                <div class="empty-card">
+                                    <div class="empty-title" tabindex="0">Здесь пока пусто</div>
+                                    <div class="empty-descr" tabindex="0">
+                                        А в галерее вы всегда можете найти что-то интересное для себя
+                                    </div>
+                                    <a data-goto=".gallery" aria-label="В галлерею" class="empty-link" href="#">В
+                                        галерею</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__year" role="tablist">
+                            <div role="tab" aria-label="C 1800 по 1899 гг." class="catalog-year-title"> C 1800 по
+                                1899 гг.</div>
+                            <svg class="catalog-year-img" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                    fill="#ECECEC" />
+                                <path
+                                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                    stroke="#ECECEC" />
+                                <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                            </svg>
+                        </div>
+                        <div class="catalog__artist">
+                            <div class="catalog-empty">
+                                <div class="empty-wrapper">
+                                    <div class="empty-img"></div>
+                                </div>
+                                <div class="empty-card">
+                                    <div class="empty-title" tabindex="0">Здесь пока пусто</div>
+                                    <div class="empty-descr" tabindex="0">
+                                        А в галерее вы всегда можете найти что-то интересное для себя
+                                    </div>
+                                    <a data-goto=".gallery" aria-label="В галлерею" class="empty-link" href="#">В
+                                        галерею</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__year" role="tablist">
+                            <div role="tab" aria-label="C 1900 по 1999 гг." class="catalog-year-title"> C 1900 по
+                                1999 гг.</div>
+                            <svg class="catalog-year-img" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                    fill="#ECECEC" />
+                                <path
+                                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                    stroke="#ECECEC" />
+                                <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                            </svg>
+                        </div>
+                        <div class="catalog__artist">
+                            <div class="catalog-empty">
+                                <div class="empty-wrapper">
+                                    <div class="empty-img"></div>
+                                </div>
+                                <div class="empty-card">
+                                    <div class="empty-title" tabindex="0">Здесь пока пусто</div>
+                                    <div class="empty-descr" tabindex="0">
+                                        А в галерее вы всегда можете найти что-то интересное для себя
+                                    </div>
+                                    <a data-goto=".gallery" aria-label="В галлерею" class="empty-link" href="#">В
+                                        галерею</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__year" role="tablist">
+                            <div role="tab" aria-label="C 2000 г." class="catalog-year-title"> C 2000 г.</div>
+                            <svg class="catalog-year-img" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                    fill="#ECECEC" />
+                                <path
+                                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                    stroke="#ECECEC" />
+                                <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                            </svg>
+                        </div>
+                        <div class="catalog__artist">
+                            <div class="catalog-empty">
+                                <div class="empty-wrapper">
+                                    <div class="empty-img"></div>
+                                </div>
+                                <div class="empty-card">
+                                    <div class="empty-title" tabindex="0">Здесь пока пусто</div>
+                                    <div class="empty-descr" tabindex="0">
+                                        А в галерее вы всегда можете найти что-то интересное для себя
+                                    </div>
+                                    <a data-goto=".gallery" aria-label="В галлерею" class="empty-link" href="#">В
+                                        галерею</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="event">
+            <div class="container">
+                <h2 tabindex="0" class="section-title title-event">События</h2>
+                <div class="event__content">
+                    <button class="swiper-event-button swiper-event-button-prev">
+                    </button>
+                    <button class="swiper-event-button swiper-event-button-next">
+                    </button>
+                    <div class="swiper event__slider" id="event__slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="event__card event-slider-slide swiper-slide">
+                                <div class="event-card-item ">
+                                    <picture class="event__img">
+                                        <source srcset="/img/event_1_320.jpg" media="(max-width: 425px)">
+                                        <source srcset="/img/event_1_768.jpg" media="(max-width: 768px)">
+                                        <source srcset="/img/event_1_1024.jpg" media="(max-width: 1280px)">
+                                        <source srcset="/img/event_1.png">
+                                        <img src="/img/event_1.png" alt="событие">
+                                    </picture>
+                                    <div class="event-card-content">
+                                        <div class="event__time" tabindex="0">
+                                            <div tabindex="0">
+                                                Музей им. Щусева
+                                            </div>
+                                            <div>с 20 марта по 30 апреля</div>
+
+                                        </div>
+                                        <div class="event__title event-title-first">
+                                            Книжная гравюра в живом восприятии
+                                        </div>
+                                        <div class="event__descr event-descr-first">
+                                            Один из ведущих флорентийских художников Кватроченто, основатель
+                                            художественной
+                                            династии,
+                                            которую продолжили его брат Давид и сын Ридольфо.
+                                        </div>
+
+                                    </div>
+                                    <a aria-label="Подробнее" class="event__link" tabindex="0">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="event__card event-slider-slide swiper-slide">
+                                <div class="event-card-item ">
+                                    <picture class="event__img">
+                                        <source srcset="/img/event_2_320.jpg" media="(max-width: 425px)">
+                                        <source srcset="/img/event_2_768.jpg" media="(max-width: 768px)">
+                                        <source srcset="/img/event_2_1024.jpg" media="(max-width: 1280px)">
+                                        <source srcset="/img/event_2.png">
+                                        <img src="/img/event_2.png" alt="событие">
+                                    </picture>
+                                    <div class="event-card-content">
+                                        <div class="event__time" tabindex="0">
+                                            <div tabindex="0">ММОМА</div>
+                                            <div tabindex="0">24 марта 19:00</div>
+                                        </div>
+                                        <div class="event__title">
+                                            «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+                                        </div>
+                                        <div class="event__descr">
+                                            Высокий уровень вовлечения представителей целевой аудитории является четким
+                                            доказательством
+                                            простого факта.
+                                        </div>
+                                    </div>
+                                    <a aria-label="Подробнее" class="event__link" tabindex="0">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="event__card event-slider-slide swiper-slide">
+                                <div class="event-card-item ">
+
+                                    <picture class="event__img">
+                                        <source srcset="/img/event_3_320.jpg" media="(max-width: 425px)">
+                                        <source srcset="/img/event_3_768.jpg" media="(max-width: 768px)">
+                                        <source srcset="/img/event_3_1024.jpg" media="(max-width: 1280px)">
+                                        <source srcset="/img/event_3.png">
+                                        <img src="/img/event_3.png" alt="событие">
+                                    </picture>
+                                    <div class="event-card-content">
+                                        <div class="event__time" tabindex="0">
+                                            <div tabindex="0">Еврейский музей</div>
+                                            <div tabindex="0">с 31 марта по 21 апреля</div>
+                                        </div>
+                                        <div class="event__title">
+                                            Выставка «Формация 2020»
+                                        </div>
+                                        <div class="event__descr">
+                                            Идейные соображения высшего порядка, а также современная методология
+                                            разработки
+                                            играет
+                                            важную роль в формировании глубокомысленных рассуждений.
+                                        </div>
+                                    </div>
+                                    <a aria-label="Подробнее" class="event__link" tabindex="0">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="event__card  event-slider-slide swiper-slide">
+                                <div class="event-card-item card-dop ">
+                                    <picture class="event__img">
+                                        <source srcset="/img/event_4_320.jpg" media="(max-width: 425px)">
+                                        <source srcset="/img/event_4_768.jpg" media="(max-width: 768px)">
+                                        <source srcset="/img/event_4_1024.jpg" media="(max-width: 1280px)">
+                                        <source srcset="/img/event_4.png">
+                                        <img src="/img/event_4.png" alt="событие">
+                                    </picture>
+                                    <div class="event-card-content">
+                                        <div class="event__time" tabindex="0">
+                                            <div tabindex="0">Третьяковка на Крымском валу</div>
+                                            <div tabindex="0">с 30 марта по 30 апреля</div>
+                                        </div>
+                                        <div class="event__title">
+                                            XXIV Международная биеннале молодого искусства
+                                        </div>
+                                        <div class="event__descr">
+                                            Внезапно, реплицированные с зарубежных источников, современные исследования.
+                                        </div>
+                                    </div>
+                                    <a aria-label="Подробнее" class="event__link" tabindex="0">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="event__card event-slider-slide swiper-slide">
+                                <div class="event-card-item card-dop ">
+                                    <picture class="event__img">
+                                        <source srcset="/img/event_5_320.jpg" media="(max-width: 425px)">
+                                        <source srcset="/img/event_5_768.jpg" media="(max-width: 768px)">
+                                        <source srcset="/img/event_5_1024.jpg" media="(max-width: 1280px)">
+                                        <source srcset="/img/event_5.png">
+                                        <img src="/img/event_5.png" alt="событие">
+                                    </picture>
+                                    <div class="event-card-content">
+                                        <div class="event__time" tabindex="0">
+                                            <div tabindex="0">ММАМ</div>
+                                            <div tabindex="0">с 8 апреля по 20 мая</div>
+                                        </div>
+                                        <div class="event__title">
+                                            Джон Винзор. Фотографии из серии «Метафора серебра»
+                                        </div>
+                                        <div tabindex="0" class="event__descr event-descr-second">
+                                            Один из ведущих флорентийских художников Кватроченто, основатель
+                                            художественной
+                                            династии,
+                                            которую продолжили его брат Давид и сын Ридольфо.
+                                        </div>
+                                    </div>
+                                    <a aria-label="Подробнее" class="event__link" tabindex="0">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination event-slider-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="container ">
+                <h2 tabindex="0" class="section-title projects-title">Проекты</h2>
+                <div tabindex="0" class="projects__descr">
+                    Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности
+                    однозначно фиксирует необходимость
+                    своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными
+                    данными до степени
+                    совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное
+                    информационно-пропагандистское
+                    <button class="tooltip" data-tippy-content="Пример современных тенденций - современная методология
+                    разработки">
+                        <svg class="tooltip-icon tooltip-icon-i" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z" stroke="#9D5CD0"/>
+                            <path d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z" fill="black"/>
+                            </svg>
+                            <svg class="tooltip-icon tooltip-icon-x" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16.001C12.4183 16.001 16 12.4193 16 8.00098C16 3.5827 12.4183 0.000976562 8 0.000976562C3.58172 0.000976562 0 3.5827 0 8.00098C0 12.4193 3.58172 16.001 8 16.001Z" fill="white"/>
+                                <path d="M10.9111 4.49268L11.9555 5.53702L5.20621 12.2863L4.16187 11.2419L10.9111 4.49268Z" fill="white"/>
+                                <path d="M11.7939 11.0811L10.7496 12.1254L4.00034 5.37613L5.04468 4.33179L11.7939 11.0811Z" fill="white"/>
+                            </svg>
+                    </button>
+                    обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности
+                    принимаемых решений.
+                    И нет сомнений, что действия представителей оппозиции могут быть рассмотрены
+                    <button class="tooltip" data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе
+                    аналитики выводы вызывают у вас эмоции ">
+                    <svg class="tooltip-icon tooltip-icon-i" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z" stroke="#9D5CD0"/>
+                        <path d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z" fill="black"/>
+                        </svg>
+                        <svg class="tooltip-icon tooltip-icon-x" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16.001C12.4183 16.001 16 12.4193 16 8.00098C16 3.5827 12.4183 0.000976562 8 0.000976562C3.58172 0.000976562 0 3.5827 0 8.00098C0 12.4193 3.58172 16.001 8 16.001Z" fill="white"/>
+                            <path d="M10.9111 4.49268L11.9555 5.53702L5.20621 12.2863L4.16187 11.2419L10.9111 4.49268Z" fill="white"/>
+                            <path d="M11.7939 11.0811L10.7496 12.1254L4.00034 5.37613L5.04468 4.33179L11.7939 11.0811Z" fill="white"/>
+                        </svg>
+                    </button>
+                    исключительно в разрезе маркетинговых и финансовых
+                    <button class="tooltip" data-tippy-content="В стремлении повысить качество">
+                        <svg class="tooltip-icon tooltip-icon-i" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z" stroke="#9D5CD0"/>
+                            <path d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z" fill="black"/>
+                            </svg>
+                            <svg class="tooltip-icon tooltip-icon-x" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16.001C12.4183 16.001 16 12.4193 16 8.00098C16 3.5827 12.4183 0.000976562 8 0.000976562C3.58172 0.000976562 0 3.5827 0 8.00098C0 12.4193 3.58172 16.001 8 16.001Z" fill="white"/>
+                                <path d="M10.9111 4.49268L11.9555 5.53702L5.20621 12.2863L4.16187 11.2419L10.9111 4.49268Z" fill="white"/>
+                                <path d="M11.7939 11.0811L10.7496 12.1254L4.00034 5.37613L5.04468 4.33179L11.7939 11.0811Z" fill="white"/>
+                            </svg>
+                    </button>
+                    предпосылок.
+                    Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают
+                    нас к новым свершениям, которые,
+                    в свою очередь, должны быть смешаны с не уникальными данными
+                    до степени совершенной неузнаваемости. Подробнее:
+                    <a class="projects__link" href="">blanchard-art.ru/projects/about</a>
+                </div>
+                <h3 tabindex="0" class="projects__title">Партнёры проектов:</h3>
+                <div class="projects__container">
+                    <button
+                        class="swiper-projects-button swiper-projects-button-prev swiper-button swiper-button-projects ">
+                        <svg class="arrow-img" width="7" height="12" viewBox="0 0 7 12"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 11L0.999995 6L6 0.999998" stroke="#000000" />
+                        </svg>
+                    </button>
+                    <button
+                        class="swiper-projects-button swiper-projects-button-next swiper-button swiper-button-projects"
+                        onclick="this.blur();">
+                        <svg class="arrow-img" width="7" height="12" viewBox="0 0 7 12"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11L6.00001 6L1 0.999997" stroke="#000000" />
+                        </svg>
+
+                    </button>
+                    <div class="swiper projects__slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <button class="swiper-slide projects__slide">
+                                <picture class="projects__img">
+                                    <source srcset="/img/projects_swiper/projects_1_320.png" media="(max-width: 425px)">
+                                    <source srcset="/img/projects_swiper/projects_1_768.png" media="(max-width: 768px)">
+                                    <source srcset="/img/projects_swiper/projects_1_1024.png"
+                                        media="(max-width: 1280px)">
+                                    <source srcset="/img/projects_swiper/projects_1_color.png">
+                                    <img class="projects-slide-img" src="/img/projects_swiper/projects_1_color.png"
+                                        alt="событие">
+                                </picture>
+                            </button>
+                            <button class="swiper-slide projects__slide">
+                                <picture class="projects__img">
+                                    <source srcset="/img/projects_swiper/projects_2_320.png" media="(max-width: 425px)">
+                                    <source srcset="/img/projects_swiper/projects_2_768.png" media="(max-width: 768px)">
+                                    <source srcset="/img/projects_swiper/projects_2_1024.png"
+                                        media="(max-width: 1280px)">
+                                    <source srcset="/img/projects_swiper/projects_2_color.png">
+                                    <img class="projects-slide-img" src="/img/projects_swiper/projects_2_color.png"
+                                        alt="событие">
+                                </picture>
+                            </button>
+                            <button class="swiper-slide projects__slide">
+                                <picture class="projects__img">
+                                    <source srcset="/img/projects_swiper/projects_3_320.png" media="(max-width: 425px)">
+                                    <source srcset="/img/projects_swiper/projects_3_768.png" media="(max-width: 768px)">
+                                    <source srcset="/img/projects_swiper/projects_3_1024.png"
+                                        media="(max-width: 1280px)">
+                                    <source srcset="/img/projects_swiper/projects_3_color.png">
+                                    <img class="projects-slide-img" src="/img/projects_swiper/projects_3_color.png"
+                                        alt="событие">
+                                </picture>
+                            </button>
+                            <button class="swiper-slide projects__slide">
+                                <picture class="projects__img">
+                                    <source srcset="/img/projects_swiper/projects_4_320.png" media="(max-width: 425px)">
+                                    <source srcset="/img/projects_swiper/projects_4_768.png" media="(max-width: 768px)">
+                                    <source srcset="/img/projects_swiper/projects_4_1024.png"
+                                        media="(max-width: 1280px)">
+                                    <source srcset="/img/projects_swiper/projects_4_color.png">
+                                    <img class="projects-slide-img" src="/img/projects_swiper/projects_4_color.png"
+                                        alt="событие">
+                                </picture>
+                            </button>
+                            <button class="swiper-slide projects__slide">
+                                <picture class="projects__img">
+                                    <source srcset="/img/projects_swiper/projects_5_320.png" media="(max-width: 425px)">
+                                    <source srcset="/img/projects_swiper/projects_5_768.png" media="(max-width: 768px)">
+                                    <source srcset="/img/projects_swiper/projects_5_1024.png"
+                                        media="(max-width: 1280px)">
+                                    <source srcset="/img/projects_swiper/projects_5_color.png">
+                                    <img class="projects-slide-img" src="/img/projects_swiper/projects_5_color.png"
+                                        alt="событие">
+                                </picture>
+                            </button>
+                            <button class="swiper-slide projects__slide">
+                                <picture class="projects__img">
+                                    <source srcset="/img/projects_swiper/projects_6_320.png" media="(max-width: 425px)">
+                                    <source srcset="/img/projects_swiper/projects_6_768.png" media="(max-width: 768px)">
+                                    <source srcset="/img/projects_swiper/projects_6_1024.png"
+                                        media="(max-width: 1280px)">
+                                    <source srcset="/img/projects_swiper/projects_6_color.png">
+                                    <img class="projects-slide-img" src="/img/projects_swiper/projects_6_color.png"
+                                        alt="событие">
+                                </picture>
+                            </button>
+                            <button class="swiper-slide projects__slide">
+                                <picture class="projects__img">
+                                    <source srcset="/img/projects_swiper/projects_7_320.png" media="(max-width: 425px)">
+                                    <source srcset="/img/projects_swiper/projects_7_768.png" media="(max-width: 768px)">
+                                    <source srcset="/img/projects_swiper/projects_7_1024.png"
+                                        media="(max-width: 1280px)">
+                                    <source srcset="/img/projects_swiper/projects_7_color.png">
+                                    <img class="projects-slide-img" src="/img/projects_swiper/projects_7_color.png"
+                                        alt="событие">
+                                </picture>
+                            </button>
+                            <button class="swiper-slide projects__slide">
+                                <picture class="projects__img">
+                                    <source srcset="/img/projects_swiper/projects_8_320.png" media="(max-width: 425px)">
+                                    <source srcset="/img/projects_swiper/projects_8_768.png" media="(max-width: 768px)">
+                                    <source srcset="/img/projects_swiper/projects_8_1024.png"
+                                        media="(max-width: 1280px)">
+                                    <source srcset="/img/projects_swiper/projects_8_color.png">
+                                    <img class="projects-slide-img" src="/img/projects_swiper/projects_8_color.png"
+                                        alt="событие">
+                                </picture>
+                            </button>
+                            <button class="swiper-slide projects__slide">
+                                <picture class="projects__img">
+                                    <source srcset="/img/projects_swiper/projects_9_320.png" media="(max-width: 425px)">
+                                    <source srcset="/img/projects_swiper/projects_9_768.png" media="(max-width: 768px)">
+                                    <source srcset="/img/projects_swiper/projects_9_1024.png"
+                                        media="(max-width: 1280px)">
+                                    <source srcset="/img/projects_swiper/projects_9_color.png">
+                                    <img class="projects-slide-img" src="/img/projects_swiper/projects_9_color.png"
+                                        alt="событие">
+                                </picture>
+                            </button>
+                            ...
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <h2 tabindex="0" class="section-title contacts__title">Контакты</h2>
+            <div class="container contacts__container">
+                <div class="contacts__content">
+                    <div class="contacts__adress">
+                        <div tabindex="0" class="adress-title adress-title-1">Шоурум №4</div>
+                        <div tabindex="0" class="adress-descr">Леонтьевский переулок, дом 5/1</div>
+                    </div>
+                    <form action="#" id="form" class="form" method="POST">
+                        <label for="name" class="just-validate-tooltip-container">
+                            <input type="text" data-validate-field="name" class="form__input form__item contacts__input"
+                                placeholder="Имя*" name="name" id="name">
+                        </label>
+                        <label for="tel" class="just-validate-tooltip-container">
+                            <input type="tel" data-validate-field="tel" class="form__input form__item contacts__input"
+                                placeholder="Телефон*" name="tel" id="tel">
+                        </label>
+                        <button type="submit" tabindex="0" class="form__btn btn btn-primary">Заказать <span
+                                class="form-btn-dop">обратный звонок</span> </button>
+                    </form>
+                    <div class="adress-social">
+                        <h2  class="adress-social-title">Связаться в один
+                            клик</h2>
+                        <ul class="adress-social__list">
+                            <li class="adress-social-list-item">
+                                <a href=""  class="social-icon social-icon-whatsapp" aria-label="Связаться в ватсап">
+
+                                    <svg class="social-icon-img adress-social-list-link" width="23" height="23"
+                                        viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.8749 13.751C16.6249 13.626 15.3124 12.876 15.0624 12.8135C14.8124 12.6885 14.6249 12.6885 14.4374 12.9385C14.2499 13.1885 13.6874 13.8135 13.5624 13.9385C13.3749 14.126 13.2499 14.126 12.9999 14.001C12.7499 13.876 11.8749 13.5635 10.8749 12.5635C10.1249 11.8135 9.5624 10.9385 9.4374 10.626C9.3124 10.376 9.4374 10.1885 9.5624 10.0635C9.6874 9.93848 9.81239 9.75098 9.99989 9.62598C10.1874 9.50098 10.1874 9.37598 10.3124 9.18848C10.4374 9.00098 10.3749 8.87598 10.3124 8.68848C10.2499 8.50098 9.7499 7.18848 9.5624 6.62598C9.3749 6.06348 9.12489 6.18848 8.99989 6.12598C8.81239 6.12598 8.68739 6.06348 8.49989 6.06348C8.24989 6.06348 7.93739 6.18848 7.74989 6.37598C7.49989 6.62598 6.74989 7.25098 6.74989 8.56348C6.74989 9.87598 7.62489 11.251 7.74989 11.376C7.87489 11.5635 9.4999 14.4385 12.1874 15.626C14.8749 16.8135 14.8749 16.4385 15.3749 16.4385C15.8749 16.4385 16.9999 15.8135 17.2499 15.251C17.4999 14.626 17.4999 14.0635 17.4374 14.001C17.3124 14.001 17.1249 13.9385 16.8749 13.751ZM11.8749 20.1885C10.1249 20.1885 8.4999 19.6885 7.06239 18.751L3.68739 19.8135L4.81239 16.5635C3.74989 15.0635 3.12489 13.251 3.12489 11.376C3.12489 6.50098 7.06239 2.56348 11.9374 2.56348C16.8124 2.56348 20.6874 6.50098 20.6874 11.376C20.6874 16.251 16.7499 20.1885 11.8749 20.1885ZM11.8749 0.813477C6.0624 0.813477 1.31239 5.56348 1.31239 11.376C1.31239 13.3135 1.81239 15.1885 2.81239 16.8135L0.874893 22.501L6.74989 20.626C8.3124 21.501 10.0624 21.9385 11.8749 21.9385C17.6874 21.9385 22.4374 17.1885 22.4374 11.376C22.4374 5.56348 17.7499 0.813477 11.8749 0.813477Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                            </li>
+                            <li class="adress-social-list-item">
+                                <a href="" class="social-icon social-icon-telegramm" aria-label="связаться в телеграмм">
+
+                                    <svg class="social-icon-img adress-social-list-link" width="23" height="19"
+                                        viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.05312 7.7889L13.7167 2.7649C19.271 0.454701 20.425 0.0534209 21.1773 0.0401809C21.3428 0.0372609 21.7127 0.0782604 21.9523 0.2727C22.1547 0.436861 22.2103 0.658701 22.237 0.814301C22.2636 0.969901 22.2968 1.32458 22.2704 1.60166C21.9694 4.76406 20.667 12.4386 20.0045 15.9806C19.7241 17.4794 19.1725 17.9819 18.6377 18.0311C17.4762 18.138 16.5943 17.2635 15.4694 16.5261L11.006 13.528C9.03136 12.2268 10.3114 11.5116 11.4368 10.3428C11.7313 10.0368 16.8486 5.38226 16.9476 4.96002C16.9596 4.90722 16.9715 4.71042 16.8546 4.60642C16.7376 4.50242 16.565 4.53842 16.4404 4.5663C16.2639 4.60638 13.4519 6.46502 8.00436 10.1423C7.20616 10.6904 6.48316 10.9575 5.83544 10.9435C5.12132 10.9281 3.74768 10.5397 2.72652 10.2078C1.474 9.80066 0.478518 9.58538 0.565238 8.89394C0.610358 8.53382 1.10632 8.16554 2.05308 7.78898L2.05312 7.7889Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="my-map">
+                <div class="map" id="map"></div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__container">
+                    <div class="footer__logo ">
+                        <a href="" href="" class="footer__link">
+                            <img src="/img/footer_logo.svg" alt="">
+                        </a>
+                    </div>
+                    <ul class="footer__social-list">
+                        <li class="footer-social-list-item">
+                            <a href="" class="footer-btn">
+                                <svg class="social-link-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z"
+                                        fill="#CACACA" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-list-item">
+                            <a href="" class="footer-btn">
+
+                                <svg class="social-link-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.1172 22.5C18.1172 24.8785 20.0453 26.8066 22.4238 26.8066C24.8024 26.8066 26.7305 24.8785 26.7305 22.5C26.7305 20.1215 24.8024 18.1934 22.4238 18.1934C20.0453 18.1934 18.1172 20.1215 18.1172 22.5Z"
+                                        fill="#CACACA" />
+                                    <path
+                                        d="M12.3521 14.8803C12.5591 14.3194 12.8894 13.8116 13.3185 13.3948C13.7353 12.9656 14.2428 12.6354 14.8041 12.4283C15.2593 12.2515 15.9432 12.0411 17.2029 11.9837C18.5655 11.9216 18.9741 11.9082 22.4238 11.9082C25.8738 11.9082 26.2824 11.9212 27.6447 11.9834C28.9044 12.0411 29.5886 12.2515 30.0435 12.4283C30.6048 12.6354 31.1126 12.9656 31.5291 13.3948C31.9582 13.8116 32.2885 14.319 32.4959 14.8803C32.6727 15.3356 32.8831 16.0198 32.9405 17.2795C33.0026 18.6418 33.016 19.0503 33.016 22.5004C33.016 25.9501 33.0026 26.3587 32.9405 27.7213C32.8831 28.981 32.6727 29.6649 32.4959 30.1201C32.2885 30.6814 31.9586 31.1889 31.5294 31.6057C31.1126 32.0348 30.6052 32.3651 30.0438 32.5721C29.5886 32.7493 28.9044 32.9597 27.6447 33.0171C26.2824 33.0792 25.8742 33.0922 22.4241 33.0922C18.9737 33.0922 18.5652 33.0792 17.2032 33.0171C15.9436 32.9597 15.2593 32.7493 14.8041 32.5721C13.6773 32.1375 12.7867 31.2469 12.3521 30.1201C12.1753 29.6649 11.9648 28.981 11.9071 27.7213C11.845 26.3587 11.8319 25.9501 11.8319 22.5004C11.8319 19.0503 11.845 18.6418 11.9071 17.2795C11.9645 16.0198 12.1749 15.3356 12.3521 14.8803ZM22.4238 29.1344C26.0881 29.1344 29.0585 26.1643 29.0585 22.5001C29.0585 18.8358 26.0881 15.8657 22.4238 15.8657C18.7599 15.8657 15.7894 18.8358 15.7894 22.5001C15.7894 26.1643 18.7599 29.1344 22.4238 29.1344ZM15.5271 17.1538C16.3834 17.1538 17.0776 16.4596 17.0776 15.6034C17.0776 14.7471 16.3834 14.0529 15.5271 14.0529C14.6709 14.0529 13.9767 14.7471 13.9767 15.6034C13.977 16.4596 14.6709 17.1538 15.5271 17.1538Z"
+                                        fill="#CACACA" />
+                                    <path
+                                        d="M22.6204 0C34.9364 0 44.9238 9.98747 44.9238 22.3034C44.9238 34.6194 34.9364 44.6069 22.6204 44.6069C10.3044 44.6069 0.316959 34.6194 0.316959 22.3034C0.316959 9.98747 10.3044 0 22.6204 0ZM9.89059 27.5836C9.95253 28.9469 10.1693 29.8777 10.4858 30.6924C11.1512 32.4127 12.5111 33.7727 14.2314 34.438C15.0458 34.7545 15.9769 34.971 17.3399 35.0332C18.7057 35.0955 19.1419 35.1105 22.6201 35.1105C26.0985 35.1105 26.5345 35.0955 27.9005 35.0332C29.2635 34.971 30.1946 34.7545 31.009 34.438C31.8639 34.1164 32.6378 33.6124 33.2776 32.9607C33.929 32.3212 34.433 31.547 34.7546 30.6924C35.0711 29.878 35.2879 28.9469 35.3498 27.5839C35.4128 26.2178 35.4274 25.7815 35.4274 22.3034C35.4274 18.8253 35.4128 18.389 35.3502 17.0233C35.2883 15.66 35.0718 14.7292 34.7553 13.9145C34.4337 13.0599 33.9293 12.2857 33.2776 11.6462C32.6382 10.9945 31.8639 10.4905 31.0094 10.1689C30.1946 9.85236 29.2638 9.63592 27.9005 9.57364C26.5348 9.51136 26.0985 9.49638 22.6204 9.49638C19.1423 9.49638 18.706 9.51136 17.3403 9.57398C15.9769 9.63592 15.0462 9.85236 14.2314 10.1685C13.3769 10.4901 12.6026 10.9945 11.9628 11.6462C11.3114 12.286 10.8071 13.0599 10.4858 13.9145C10.169 14.7292 9.95253 15.66 9.89025 17.0233C9.82798 18.389 9.81334 18.8253 9.81334 22.3034C9.81334 25.7815 9.82798 26.2178 9.89059 27.5836Z"
+                                        fill="#CACACA" />
+                                </svg>
+                            </a>
+
+                        </li>
+                        <li class="footer-social-list-item">
+                            <a href="" class="footer-btn">
+
+                                <svg class="social-link-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22.5 0C10.125 0 0 10.1431 0 22.6355C0 33.9307 8.23499 43.3057 18.99 45V29.1867H13.275V22.6355H18.99V17.6431C18.99 11.9729 22.3425 8.85542 27.495 8.85542C29.9475 8.85542 32.5125 9.28464 32.5125 9.28464V14.8645H29.6775C26.8875 14.8645 26.01 16.6039 26.01 18.3886V22.6355H32.265L31.2525 29.1867H26.01V45C31.312 44.1593 36.1399 41.4432 39.6223 37.342C43.1047 33.2408 45.012 28.0248 44.9999 22.6355C44.9999 10.1431 34.875 0 22.5 0Z"
+                                        fill="#CACACA" />
+                                </svg>
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="/js/choices.min.js"></script>
+    <script src="/js/inputmask.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="/js/just-validate.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
